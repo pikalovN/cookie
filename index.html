@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh; align-items: center; justify-content: center;">
+  <div style="
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    background-color: bisque; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;">
+      <h2>Cookie</h2>
+  </div>
+</body>
+<script type="text/javascript">
+  let expiredate = new Date(); 
+  expiredate.setDate(expiredate.getDate() + 5);
+  document.cookie = "student=pikalov; expires="+ expiredate.toGMTString() ;
+</script>
+</html>
